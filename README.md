@@ -18,5 +18,7 @@
    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03014ee3-5067-4357-a1c1-731b20cafc65" />
    Halaman Form
    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d45e88a6-e078-4c3d-9aad-1e9507649429" />
+   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/370b9fb1-8663-499d-b158-388feb575ca4" />
    Halaman Home Setelah Input
    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/67e3f07e-49b2-48eb-a8b5-4b8b854d474b" />
+   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d29262e3-e7ab-45df-ac26-92a432c0de7e" />
