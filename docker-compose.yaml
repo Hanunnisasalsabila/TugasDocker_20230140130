@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14
+    container_name: db_mahasiswa
+    restart: always
+    environment:
+      POSTGRES_DB: praktikum_db
+      POSTGRES_USER: praktikum-user
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: springboot-app
+    ports:
+      - "8081:8081"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/praktikum_db
+      SPRING_DATASOURCE_USERNAME: praktikum-user
+      SPRING_DATASOURCE_PASSWORD: 12345
+
+volumes:
+  db_data:

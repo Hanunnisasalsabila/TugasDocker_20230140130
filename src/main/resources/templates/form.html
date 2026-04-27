@@ -6,7 +6,7 @@
 <body style="font-family: sans-serif; margin: 40px;">
 <h2>Form Input Mahasiswa</h2>
 
-<form action="/submit-form" method="post" th:object="${user}">
+<form action="/submit" method="post" th:object="${user}">
     <div style="margin-bottom: 15px;">
         <label>Nama:</label><br>
         <input type="text" name="nama" th:field="*{nama}" style="width: 300px;" required>
@@ -19,10 +19,10 @@
 
     <div style="margin-bottom: 20px;">
         <label>Jenis Kelamin:</label><br>
-        <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" th:field="*{jenisKelamin}" required>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" th:field="*{jenis_kelamin}" required>
         <label for="laki">Laki-laki</label><br>
 
-        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" th:field="*{jenisKelamin}" required>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" th:field="*{jenis_kelamin}" required>
         <label for="perempuan">Perempuan</label>
     </div>
 

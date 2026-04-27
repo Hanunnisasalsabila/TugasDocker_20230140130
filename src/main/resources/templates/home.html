@@ -23,14 +23,14 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:if="${#lists.isEmpty(users)}">
+    <tr th:if="${#lists.isEmpty(dataList)}">
         <td colspan="4" style="text-align: center;">Belum ada data</td>
     </tr>
-    <tr th:each="u, iterStat : ${users}">
+    <tr th:each="u, iterStat : ${dataList}">
         <td th:text="${iterStat.count}">1</td>
         <td th:text="${u.nama}">Nama Mahasiswa</td>
         <td th:text="${u.nim}">NIM Mahasiswa</td>
-        <td th:text="${u.jenisKelamin}">Jenis Kelamin</td>
+        <td th:text="${u.jenis_kelamin}">Jenis Kelamin</td>
     </tr>
     </tbody>
 </table>
